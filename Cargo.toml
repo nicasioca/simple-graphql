@@ -1,0 +1,14 @@
+[package]
+name = "axum-starwars"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-graphql = "3.0"
+async-graphql-axum = "3.0"
+tokio = { version = "1", features = ["full"] }
+starwars = { path = "./models/starwars" }
+hyper = "0.14"
+axum = { version = "0.5.1", features = ["headers"] }
